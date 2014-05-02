@@ -1,15 +1,6 @@
 #include <SoftwareSerial.h>
-#define RED 10
-#define GREEN 11
-#define BAUD 9600
-#define RX 0
-#define TX 1
-
-//commands
-#define HELP 100
-#define STATUS 101
-#define BOTH 102
-#define NOOP -1
+#include "Constants.h"
+#include "Commands.h"
 
 SoftwareSerial bluetooth(RX, TX); // RX, TX
 char bluetoothData;
